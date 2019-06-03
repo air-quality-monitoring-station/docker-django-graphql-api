@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 INSTALLED_APPS = [
     'esite.api',
-    'esite.aqms',
+    'esite.kisy',
 
     'rest_framework',
     'graphene_django',
@@ -111,6 +111,8 @@ DATABASES = {
 GRAPHENE = {
     'SCHEMA': 'esite.api.schema.schema',
 }
+
+AUTH_USER_MODEL = 'esite.kisy.Customer'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

@@ -1,9 +1,9 @@
 import graphene
 
-import esite.aqms.schema
+import esite.kisy.schema
 
 
-class Query(esite.aqms.schema.Query, graphene.ObjectType):
+class Query(esite.kisy.schema.Query, graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project
     pass
